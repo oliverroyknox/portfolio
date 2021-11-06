@@ -11,7 +11,7 @@ const NavLabel = ({ text, to }) => {
 
 const NavTitle = ({ text, to, isVisible }) => {
     return (
-        <Link to={to} className={`mb-16 text-4xl transition-color transition-transform hover:text-dark-raspberry ${isVisible ? "" : "transform translate-x-8"}`}>
+        <Link to={to} className={`mb-16 text-4xl font-medium transition-color transition-transform hover:text-dark-raspberry ${isVisible ? "" : "transform translate-x-8"}`}>
             <span>{text}</span>
         </Link>
     );
