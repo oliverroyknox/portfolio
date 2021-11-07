@@ -4,6 +4,9 @@ module.exports = {
     darkMode: false, // or 'media' or 'class'
     theme: {
         extend: {
+            screens: {
+                smh: { raw: "(min-height: 700px)" },
+            },
             colors: {
                 "transparent": "transparent",
                 "current": "currentColor",

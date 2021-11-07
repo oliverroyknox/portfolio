@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "gatsby";
 
 const NavLabel = ({ text, to }) => {
@@ -11,7 +11,7 @@ const NavLabel = ({ text, to }) => {
 
 const NavTitle = ({ text, to, isVisible }) => {
     return (
-        <Link to={to} className={`mb-16 text-4xl font-medium transition-color transition-transform hover:text-dark-raspberry ${isVisible ? "" : "transform translate-x-8"}`}>
+        <Link to={to} className={`text-4xl font-medium transition-color transition-transform hover:text-dark-raspberry ${isVisible ? "" : "transform translate-x-8"}`}>
             <span>{text}</span>
         </Link>
     );
@@ -19,6 +19,10 @@ const NavTitle = ({ text, to, isVisible }) => {
 
 const HamburgerMenu = () => {
     const [open, setOpen] = useState(false);
+
+    useEffect(() => {
+        document.documentElement.classList.toggle("overflow-hidden", open);
+    }, [open]);
 
     return [
         <div className="md:hidden flex justify-start items-center ml-auto" onClick={() => setOpen(!open)}>
@@ -29,7 +33,7 @@ const HamburgerMenu = () => {
             </div>
         </div>,
         <div
-            className={`md:hidden absolute top-16 left-0 right-0 bottom-0 flex flex-col justify-center items-start px-10 bg-white transition-opacity ${
+            className={`md:hidden smh:gap-16 gap-4 absolute top-16 left-0 bottom-0 right-0 overflow-auto flex flex-col justify-center items-start p-10 bg-white transition-opacity ${
                 open ? "" : "opacity-0 invisible"
             }`}
         >
