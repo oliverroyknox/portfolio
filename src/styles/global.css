@@ -2,3 +2,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+    .aria-current-page[aria-current="page"] {
+        @apply text-dark-raspberry;
+    }
+}
