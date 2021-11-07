@@ -1,6 +1,7 @@
 import * as React from "react";
 import { Link } from "gatsby";
 import Layout from "../components/Layout/Layout";
+import Hero from "../components/Hero/Hero";
 import code from "../images/code.svg";
 import paw from "../images/paw.svg";
 import headphones from "../images/headphones.svg";
@@ -14,14 +15,14 @@ const Icon = ({ src, alt }) => {
 const IndexPage = () => {
     return [
         <Layout>
-            <div className="w-full h-[50vh] my-4 px-10 flex flex-col justify-center items-center tracking-normal">
-                <div className="max-w-2xl">
-                    <h1 className="text-3xl tracking-tight mb-4 font-medium">
+            <Hero
+                title={
+                    <span>
                         Hi I'm Oli. A developer, <span className="text-dark-raspberry">passionate</span> about <span className="text-dark-raspberry">web technology</span>.
-                    </h1>
-                    <p>The web is essential to the modern world. I love to create rich user experience to make it's power accessible to everyone.</p>
-                </div>
-            </div>
+                    </span>
+                }
+                subtitle={<span>The web is essential to the modern world. I love to create rich user experience to make it's power accessible to everyone.</span>}
+            />
             <div className="w-full px-10 pb-8 flex justify-center items-center tracking-normal">
                 <div className="max-w-2xl">
                     <h2 className="text-2xl font-medium mb-4 tracking-tight">Who am I?</h2>
