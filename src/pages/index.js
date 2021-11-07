@@ -22,9 +22,9 @@ const IndexPage = () => {
                     <p>The web is essential to the modern world. I love to create rich user experience to make it's power accessible to everyone.</p>
                 </div>
             </div>
-            <div className="w-full px-10 pb-8 flex justify-center items-center">
+            <div className="w-full px-10 pb-8 flex justify-center items-center tracking-normal">
                 <div className="max-w-2xl">
-                    <h2 className="text-2xl font-medium mb-4">Who am I?</h2>
+                    <h2 className="text-2xl font-medium mb-4 tracking-tight">Who am I?</h2>
                     <ul className="text-xl my-8">
                         <li className="flex justify-start items-center mb-4">
                             <Icon src={code} alt={"Code icon"} />
