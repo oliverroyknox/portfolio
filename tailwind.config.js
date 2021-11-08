@@ -6,6 +6,7 @@ module.exports = {
         extend: {
             screens: {
                 smh: { raw: "(min-height: 700px)" },
+                pointer: { raw: "(hover: hover)" },
             },
             colors: {
                 "transparent": "transparent",
