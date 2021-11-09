@@ -25,6 +25,7 @@ const HamburgerMenu = () => {
 
     useEffect(() => {
         document.documentElement.classList.toggle("overflow-hidden", open);
+        document.documentElement.scrollTop = 0;
     }, [open]);
 
     return [
@@ -37,7 +38,7 @@ const HamburgerMenu = () => {
         </div>,
         <div
             key="menu"
-            className={`md:hidden smh:gap-16 gap-4 absolute top-16 left-0 bottom-0 right-0 overflow-auto flex flex-col justify-center items-start p-10 bg-white transition-opacity ${
+            className={`md:hidden smh:gap-16 gap-4 absolute top-16 left-0 bottom-0 right-0 overflow-auto flex flex-col justify-center items-start p-10 bg-white z-10 transition-opacity ${
                 open ? "" : "opacity-0 invisible"
             }`}
         >
