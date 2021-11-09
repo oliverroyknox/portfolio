@@ -29,7 +29,15 @@ const HamburgerMenu = () => {
     }, [open]);
 
     return [
-        <div key="hamburger" className="md:hidden flex justify-start items-center ml-auto" onClick={() => setOpen(!open)}>
+        <div
+            key="hamburger"
+            className="md:hidden flex justify-start items-center ml-auto focus:outline-none"
+            onClick={() => setOpen(!open)}
+            onKeyDown={() => setOpen(!open)}
+            role="button"
+            tabIndex={0}
+            aria-label="hamburger menu"
+        >
             <div className="h-5 w-5 flex flex-col justify-around items-center">
                 <span className={`h-0.5 w-full rounded bg-black transition-transform ${open ? "transform rotate-45 translate-y-[6.25px]" : ""}`}></span>
                 <span className={`${open ? "h-0 w-0" : "h-0.5 w-full"} rounded bg-black transition-all`}></span>
