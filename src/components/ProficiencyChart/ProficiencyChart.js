@@ -25,25 +25,25 @@ const ProficiencyChart = () => {
                 </div>
             </div>
             <div className="flex justify-start items-center w-full gap-5">
-                <img className="mr-1" width={32} src={css} alt="Javascript logo" />
+                <img className="mr-1" width={32} src={css} alt="CSS logo" />
                 <div className="w-full h-4 bg-light-gray rounded-full">
                     <span id="css-progress" className="block w-0 h-4 bg-css-blue rounded-full transition-all duration-300 delay-[50ms]" />
                 </div>
             </div>
             <div className="flex justify-start items-center w-full gap-5">
-                <img width={32} src={html} alt="Javascript logo" />
+                <img width={32} src={html} alt="HTML logo" />
                 <div className="w-full h-4 bg-light-gray rounded-full">
                     <span id="html-progress" className="block w-0 h-4 bg-html-red rounded-full transition-all duration-300 delay-100" />
                 </div>
             </div>
             <div className="flex justify-start items-center w-full gap-5">
-                <img width={32} src={stencil} alt="Javascript logo" />
+                <img width={32} src={stencil} alt="Stencil logo" />
                 <div className="w-full h-4 bg-light-gray rounded-full">
                     <span id="stencil-progress" className="block w-0 h-4 bg-stencil-white rounded-full transition-all duration-300 delay-150" />
                 </div>
             </div>
             <div className="flex justify-start items-center w-full gap-5">
-                <img width={32} src={react} alt="Javascript logo" />
+                <img width={32} src={react} alt="React logo" />
                 <div className="w-full h-4 bg-light-gray rounded-full">
                     <span id="react-progress" className="block w-0 h-4 bg-react-cyan rounded-full transition-all duration-300 delay-200" />
                 </div>

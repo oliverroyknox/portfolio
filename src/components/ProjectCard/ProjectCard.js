@@ -1,6 +1,5 @@
 import * as React from "react";
 import { Link } from "gatsby";
-import books from "../../images/vinyl.jpeg";
 
 const ProjectCard = ({ title, src, alt, href }) => {
     return (
