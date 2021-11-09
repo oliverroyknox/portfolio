@@ -30,12 +30,18 @@ const AboutPage = () => {
                     <p className="mb-4">
                         <i>*Findings may be subject to personal bias.</i>
                     </p>
-                    <div className="grid grid-cols-2 grid-rows-4 gap-5">
-                        <img className="row-start-1 row-end-3 w-full h-full object-cover rounded-xl" src={teddy} alt="My dog, Teddy" />
-                        <span className="flex justify-center items-center text-2xl font-medium text-dark-raspberry">Teddy</span>
-                        <img className="row-start-2 row-end-4 w-full h-full object-cover rounded-xl" src={teddyAndIzzy} alt="Teddy and Izzy sleeping" />
-                        <span className="flex justify-center items-center text-2xl font-medium">Izzy</span>
-                        <img className="row-start-3 row-end-5 w-full h-full object-cover rounded-xl" src={izzy} alt="My other dog, Izzy" />
+                    <div className="grid grid-cols-1 sm:grid-cols-2 sm:grid-rows-4 gap-5">
+                        <div className="aspect-w-1 sm:aspect-w-8 aspect-h-1 sm:aspect-h-10 sm:row-start-1 sm:row-end-3">
+                            <img className="w-full h-full object-cover rounded-xl" src={teddy} alt="My dog, Teddy" />
+                        </div>
+                        <span className="hidden sm:flex sm:justify-center sm:items-center text-2xl font-medium text-dark-raspberry">Teddy</span>
+                        <div className="aspect-w-1 sm:aspect-w-8 aspect-h-1 sm:aspect-h-10 sm:row-start-2 sm:row-end-4">
+                            <img className="w-full h-full object-cover rounded-xl" src={teddyAndIzzy} alt="Teddy and Izzy sleeping" />
+                        </div>
+                        <span className="hidden sm:flex sm:justify-center sm:items-center text-2xl font-medium">Izzy</span>
+                        <div className="aspect-w-1 sm:aspect-w-8 aspect-h-1 sm:aspect-h-10 sm:row-start-3 sm:row-end-5 ">
+                            <img className="w-full h-full object-cover rounded-xl" src={izzy} alt="My other dog, Izzy" />
+                        </div>
                     </div>
                     <h2 className="text-2xl font-medium mb-4 tracking-tight mt-20">Coding and design</h2>
                     <p className="mb-4">
@@ -51,9 +57,13 @@ const AboutPage = () => {
                         <span>My skills →</span>
                     </Link>
                     <h2 className="text-2xl font-medium mb-4 tracking-tight mt-20">My hobbies</h2>
-                    <div className="grid grid-cols-2 grid-rows-3 gap-5 mb-4">
-                        <img className="row-start-1 row-end-3 w-full h-full object-cover rounded-xl" src={vinyl} alt="My vinyl player" />
-                        <img className="row-start-2 row-end-4 w-full h-full object-cover rounded-xl" src={books} alt="My book case" />
+                    <div className="grid grid-cols-1 sm:grid-cols-2 sm:grid-rows-3 gap-5 mb-4">
+                        <div className="aspect-w-1 sm:aspect-w-8 aspect-h-1 sm:aspect-h-10 sm:row-start-1 sm:row-end-3">
+                            <img className="w-full h-full object-cover rounded-xl" src={vinyl} alt="My vinyl player" />
+                        </div>
+                        <div className="aspect-w-1 sm:aspect-w-8 aspect-h-1 sm:aspect-h-10 sm:row-start-2 sm:row-end-4">
+                            <img className="w-full h-full object-cover rounded-xl" src={books} alt="My book case" />
+                        </div>
                     </div>
                     <p className="mb-4">
                         I’m a massive music fan, I love going to concerts and growing my collection of vinyls. If you need someone for the music round in a quiz, I’m your man!
