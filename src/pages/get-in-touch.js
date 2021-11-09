@@ -1,10 +1,11 @@
 import * as React from "react";
+import { Link } from "gatsby";
 import Layout from "../components/Layout/Layout";
+import Seo from "../components/Seo/Seo";
 import Hero from "../components/Hero/Hero";
 import github from "../images/github.svg";
 import twitter from "../images/twitter.svg";
 import mail from "../images/mail.svg";
-import { Link } from "gatsby";
 
 const Icon = ({ src, alt }) => {
     return <img className="h-12 w-12 mr-4" src={src} alt={alt} />;
@@ -13,6 +14,7 @@ const Icon = ({ src, alt }) => {
 const ContactPage = () => {
     return (
         <Layout>
+            <Seo title="Get in touch" />
             <Hero
                 title={
                     <span>

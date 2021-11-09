@@ -1,11 +1,13 @@
 import * as React from "react";
 import Layout from "../components/Layout/Layout";
+import Seo from "../components/Seo/Seo";
 import Hero from "../components/Hero/Hero";
 import Timeline from "../components/Timeline/Timeline";
 
 const ExperiencePage = () => {
     return (
         <Layout>
+            <Seo title="Experience" />
             <Hero
                 title={
                     <span>

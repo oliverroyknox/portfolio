@@ -1,11 +1,13 @@
 import * as React from "react";
 import Layout from "../components/Layout/Layout";
+import Seo from "../components/Seo/Seo";
 import Hero from "../components/Hero/Hero";
 import ProficiencyChart from "../components/ProficiencyChart/ProficiencyChart";
 
 const SkillsPage = () => {
     return (
         <Layout>
+            <Seo title="My skills" />
             <Hero
                 title={
                     <span>

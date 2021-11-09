@@ -1,6 +1,7 @@
 import * as React from "react";
 import { Link } from "gatsby";
 import Layout from "../components/Layout/Layout";
+import Seo from "../components/Seo/Seo";
 import Hero from "../components/Hero/Hero";
 import code from "../images/code.svg";
 import paw from "../images/paw.svg";
@@ -15,6 +16,7 @@ const Icon = ({ src, alt }) => {
 const IndexPage = () => {
     return (
         <Layout>
+            <Seo title="Home" />
             <Hero
                 title={
                     <span>

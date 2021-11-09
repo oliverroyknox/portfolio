@@ -1,5 +1,6 @@
 import * as React from "react";
 import Layout from "../components/Layout/Layout";
+import Seo from "../components/Seo/Seo";
 import Hero from "../components/Hero/Hero";
 import ProjectCard from "../components/ProjectCard/ProjectCard";
 import blog from "../images/blog.png";
@@ -7,6 +8,7 @@ import blog from "../images/blog.png";
 const ProjectsPage = () => {
     return (
         <Layout>
+            <Seo title="Projects" />
             <Hero
                 title={
                     <span>

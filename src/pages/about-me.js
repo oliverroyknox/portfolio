@@ -1,6 +1,7 @@
 import * as React from "react";
 import { Link } from "gatsby";
 import Layout from "../components/Layout/Layout";
+import Seo from "../components/Seo/Seo";
 import Hero from "../components/Hero/Hero";
 import teddy from "../images/teddy.gif";
 import teddyAndIzzy from "../images/teddy & izzy.jpeg";
@@ -11,6 +12,7 @@ import books from "../images/books.jpeg";
 const AboutPage = () => {
     return (
         <Layout>
+            <Seo title="About me" />
             <Hero
                 title={
                     <span>
