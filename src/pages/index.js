@@ -13,7 +13,7 @@ const Icon = ({ src, alt }) => {
 };
 
 const IndexPage = () => {
-    return [
+    return (
         <Layout>
             <Hero
                 title={
@@ -54,8 +54,8 @@ const IndexPage = () => {
                     </Link>
                 </div>
             </div>
-        </Layout>,
-    ];
+        </Layout>
+    );
 };
 
 export default IndexPage;
