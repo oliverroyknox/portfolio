@@ -14,7 +14,8 @@
         "start": "gatsby develop",
         "build": "gatsby build",
         "serve": "gatsby serve",
-        "clean": "gatsby clean"
+        "clean": "gatsby clean",
+        "prod": "npm install && npm run build"
     },
     "dependencies": {
         "gatsby": "^4.1.0",
