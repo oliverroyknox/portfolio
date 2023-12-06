@@ -16,12 +16,12 @@ const AboutPage = () => {
             <Hero
                 title={
                     <span>
-                        I'm an <span className="text-dark-raspberry">apprentice</span> working on a <span className="text-dark-raspberry">degree</span> in software engineering.
+                        I'm a <span className="text-dark-raspberry">software engineer</span> focusing on the <span className="text-dark-raspberry">web</span>.
                     </span>
                 }
                 subtitle={
                     <span>
-                        I currently work as a front-end developer whilst studying for a degree from MMU. It’s certainly a challenge but it has been a great learning opportunity.
+                        I currently work as a front-end developer building telecommunication applications and whatever else grabs my interest!
                     </span>
                 }
             />
