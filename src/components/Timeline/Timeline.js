@@ -21,7 +21,7 @@ const Timeline = () => {
             <div className="absolute flex justify-center items-center w-full gap-5 top-36">
                 <span className="w-full text-right font-medium text-xs">June 2022</span>
                 <img src={thumbtack} height={40} width={40} alt="Thumbtack icon" />
-                <span className="w-full overflow-hidden overflow-ellipsis">Finished university</span>
+                <span className="w-full overflow-hidden overflow-ellipsis whitespace-nowrap">Finished apprenticeship / university</span>
             </div>
             <div className="absolute flex justify-center items-center w-full gap-5 top-52">
                 <span className="w-full text-right font-medium text-xs">Sept 2022</span>

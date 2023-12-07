@@ -19,7 +19,7 @@ const ExperiencePage = () => {
                 }
             />
             <div className="w-full px-10 pb-8 flex justify-center items-center tracking-normal">
-                <div className="max-w-2xl w-full">
+                <div className="max-w-3xl w-full">
                     <Timeline />
                 </div>
             </div>
