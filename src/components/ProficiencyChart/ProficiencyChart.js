@@ -9,11 +9,11 @@ const ProficiencyChart = () => {
     const container = useRef(null);
 
     useEffect(() => {
-        container.current.querySelector("#javascript-progress").classList.add("w-3/4");
-        container.current.querySelector("#css-progress").classList.add("w-3/5");
+        container.current.querySelector("#javascript-progress").classList.add("w-11/12");
+        container.current.querySelector("#css-progress").classList.add("w-3/4");
         container.current.querySelector("#html-progress").classList.add("w-5/6");
-        container.current.querySelector("#stencil-progress").classList.add("w-1/2");
-        container.current.querySelector("#react-progress").classList.add("w-2/5");
+        container.current.querySelector("#stencil-progress").classList.add("w-7/12");
+        container.current.querySelector("#react-progress").classList.add("w-4/5");
     }, [container]);
 
     return (
