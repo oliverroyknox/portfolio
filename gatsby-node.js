@@ -2,7 +2,7 @@ export const createPages = async ({ actions }) => {
     const { createRedirect } = actions;
 
     createRedirect({
-        fromPath: `/product/*/foo`,
-        toPath: `/product/*`,
+        fromPath: `/open-banking/pay-by-bank/callback`,
+        toPath: `/about-me`,
     });
 };
