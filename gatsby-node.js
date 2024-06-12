@@ -1,4 +1,4 @@
-export const createPages = async ({ actions }) => {
+exports.createPages = async ({ actions }) => {
     const { createRedirect } = actions;
 
     createRedirect({
