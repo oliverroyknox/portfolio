@@ -11,7 +11,8 @@
                         "/": "/open-banking/pay-by-bank/callback",
                         "?": {
                             "c": "?*"
-                        }
+                        },
+                        "comment": "Test"
                     }
                 ]
             }
