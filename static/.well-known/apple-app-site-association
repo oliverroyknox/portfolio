@@ -8,11 +8,7 @@
                 ],
                 "components": [
                     {
-                        "/": "/open-banking/pay-by-bank/callback",
-                        "?": {
-                            "c": "?*"
-                        },
-                        "comment": "Test"
+                        "/": "/open-banking/pay-by-bank/callback"
                     }
                 ]
             }
