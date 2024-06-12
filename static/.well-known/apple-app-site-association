@@ -6,10 +6,14 @@
                     "SYXCG3PXMW.com.wallst.apps.tdwuk",
                     "SYXCG3PXMW.uk.co.ii.mobile.beta"
                 ],
+                "appID": "SYXCG3PXMW.uk.co.ii.mobile.beta",
                 "components": [
                     {
                         "/": "/"
                     }
+                ],
+                "paths": [
+                    "/"
                 ]
             }
         ]
