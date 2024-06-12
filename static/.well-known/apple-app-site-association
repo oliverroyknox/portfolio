@@ -9,7 +9,9 @@
                 "components": [
                     {
                         "/": "/open-banking/pay-by-bank/callback",
-                        "comment": "Test"
+                        "?": {
+                            "c": "?*"
+                        }
                     }
                 ]
             }
